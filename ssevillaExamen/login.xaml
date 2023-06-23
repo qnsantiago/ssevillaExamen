@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ssevillaExamen.login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Examen Parcial 1" FontSize="20" HorizontalTextAlignment="Center" Style="{StaticResource miEstilo}"/>
+            <Image WidthRequest="100" HeightRequest="100"  Source="https://www.metroecuador.com.ec/resizer/obQE0TBSzbOK7VWLyfU-onr9_QI=/800x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/AUXHZFCVV5A7PBALHVHKG2MN44.jpg"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            
+            <Label Text="USUARIO" FontSize="20" Grid.Row="0" Grid.Column="0" Style="{StaticResource miEstilo}"/>
+                <Label Text="CONTRASEÑA" FontSize="20" Grid.Row="1" Grid.Column="0"/>
+                <Button x:Name="btnIniciar" Text="INICIAR SECION" Clicked="btnIniciar_Clicked" Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="txtUsuario" Placeholder="Ingrese el usuario" Grid.Row="0" Grid.Column="1"/>
+                <Entry x:Name="txtContraseña" Placeholder="Ingrese la contraseña" Grid.Row="1" Grid.Column="1" IsPassword="True"/>
+           
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
